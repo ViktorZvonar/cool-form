@@ -3,13 +3,14 @@
   height: fit-content;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5em;
+  padding: 1.5em;
 }
 
 .sidebar__icons {
   position: relative;
-  width: max(60px, 1em);
+  width: max(60px, 2em);
 }
 
 .sidebar__plane {
@@ -39,10 +40,6 @@
 }
 
 @media (max-width: 768px) {
-  .sidebar__container {
-    text-align: center;
-  }
-
   .sidebar__title {
     margin-left: 0;
     font-size: 1em;
