@@ -12,6 +12,9 @@
     <title>Paradisiac Form</title>
   </head>
   <body>
+    <header class="header">
+      <h1 class="header__title">Paradisiac</h1>
+      <p class="header__subtitle">Create an account</p>
     <main>
       <form class="form" action="http://httpbin.org/post" method="post">
         <h1>Let's do this</h1>
@@ -23,7 +26,6 @@
               type="text"
               name="first-name"
               id="first name"
-              placeholder="&nbsp"
               required
             />
           </div>
@@ -66,11 +68,7 @@
               id="password"
               required
             />
-            <span
-              id="passwordError"
-              class="form__error"
-              style="display: none"
-            ></span>
+            <span id="passwordError" class="form__error"></span>
           </div>
 
           <div class="form__field">

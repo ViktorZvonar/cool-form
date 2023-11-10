@@ -26,7 +26,7 @@ function validateForm(event) {
   if (!validatePasswordComplexity(password.value)) {
     event.preventDefault();
     passwordError.innerText =
-      "Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one number.";
+      "Password must contain 8 characters, 1 uppercase letter, 1 lowercase letter, 1 number.";
     passwordError.style.display = "block";
     password.classList.add("form__input--error");
     return false;

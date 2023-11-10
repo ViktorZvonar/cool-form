@@ -1,12 +1,13 @@
 .form__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   row-gap: 40px;
   column-gap: 120px;
-  padding: 20px;
+  padding: 50px;
 }
 
 .form__field {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -22,8 +23,9 @@
 }
 
 .form__error {
+  position: absolute;
+  bottom: -30%;
   color: red;
-  margin-top: 5px;
 }
 
 .form__input--error {
