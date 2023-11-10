@@ -1,0 +1,26 @@
+.form__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+  column-gap: 120px;
+  padding: 20px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  margin-bottom: 5px;
+}
+
+.form__input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form__input--error {
+  border: 1px solid red;
+}

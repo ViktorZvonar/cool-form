@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="form-validation.js" defer></script>
+    <title>Paradisiac Form</title>
+  </head>
+  <body>
+    <main>
+      <form class="form" action="http://httpbin.org/post" method="post">
+        <h1>Let's do this</h1>
+        <div class="form__container">
+          <div class="form__field">
+            <label for="first-name" class="form__label">first name</label>
+            <input
+              class="form__input"
+              type="text"
+              name="first-name"
+              id="first name"
+              placeholder="&nbsp"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label for="last-name" class="form__label">last name</label>
+            <input
+              class="form__input"
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="&nbsp"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label for="email" class="form__label">email</label>
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="&nbsp"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label for="phone-number" class="form__label">phone number</label>
+            <input
+              class="form__input"
+              type="number"
+              name="phone-number"
+              id="phone-number"
+              placeholder="&nbsp"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label for="password" class="form__label">password</label>
+            <input
+              class="form__input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="&nbsp"
+              required
+            />
+            <span
+              id="passwordError"
+              class="form__error"
+              style="display: none"
+            ></span>
+          </div>
+
+          <div class="form__field">
+            <label for="confirm-password" class="form__label"
+              >confirm password</label
+            >
+            <input
+              class="form__input"
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="&nbsp"
+              required
+            />
+          </div>
+        </div>
+        <button class="form__button" type="submit">create account</button>
+      </form>
+    </main>
+  </body>
+</html>
