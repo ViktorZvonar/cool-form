@@ -15,7 +15,7 @@ body {
 }
 
 .sidebar {
-  background-image: url("../images/island-img.jpg");
+  background-image: url("../../images/island-img.jpg");
   background-size: cover;
   background-position: center;
   grid-area: sidebar;

@@ -1,5 +1,5 @@
-import { validateForm } from "./form-validation.js";
-import { handleButton } from "./submitForm.js";
+import { validateForm } from "./modules/form-validation.js";
+import { handleButton } from "./modules/submitForm.js";
 
 window.onload = function () {
   const form = document.querySelector(".form");

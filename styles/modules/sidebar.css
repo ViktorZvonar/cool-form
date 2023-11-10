@@ -1,5 +1,6 @@
 .sidebar__container {
   display: flex;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -31,7 +32,7 @@
 
 .sidebar__title {
   margin-left: 10px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
@@ -39,11 +40,12 @@
 
 @media (max-width: 768px) {
   .sidebar__container {
-    flex-direction: column;
     text-align: center;
   }
 
   .sidebar__title {
     margin-left: 0;
+    font-size: 1em;
+    transform: rotate(-90deg);
   }
 }
