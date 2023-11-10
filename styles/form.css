@@ -1,68 +1,19 @@
-body {
-  display: grid;
-  grid-template-areas:
-    "sidebar header"
-    "sidebar main"
-    "sidebar footer";
-  grid-template-rows: auto 1fr auto; /* Sizes for header, main content, and footer */
-  grid-template-columns: 30% 1fr; /* Size for sidebar and the rest */
-  height: 100vh;
-  margin: 0; /* Added to remove default margin */
+.form {
+  padding: 50px;
 }
 
-.header {
-  grid-area: header;
-}
-
-.sidebar {
-  background-image: url("../images/island-img.jpg");
-  background-size: cover;
-  background-position: center;
-  grid-area: sidebar;
-  padding-top: 30%;
-}
-
-.sidebar__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  padding: 10px;
-}
-
-.sidebar__plane {
-  fill: lightgreen;
-  rotate: 90deg;
-}
-
-.sidebar__sphere {
-  position: absolute;
-  left: 73px;
-  fill: rgb(0, 115, 255);
-}
-
-.sidebar__title {
-  margin-left: 10px;
+.form__title {
+  margin-bottom: 1em;
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
+  color: #333;
 }
 
 .form__container {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  row-gap: 40px;
-  column-gap: 120px;
-  padding: 50px;
+  grid-template-columns: repeat(2, 30%);
+  row-gap: 30px;
+  column-gap: 100px;
 }
 
 .form__field {
@@ -72,13 +23,20 @@ body {
 }
 
 .form__label {
-  margin-bottom: 5px;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
 
 .form__input {
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 1em;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
+  max-width: 20rem;
+}
+
+.form__input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .form__error {
@@ -89,4 +47,8 @@ body {
 
 .form__input--error {
   border: 1px solid red;
+}
+
+.invisible-button {
+  display: none;
 }
