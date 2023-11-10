@@ -1,5 +1,5 @@
 .form {
-  padding: 50px;
+  padding: 3em;
 }
 
 .form__title {
@@ -28,7 +28,7 @@
 }
 
 .form__input {
-  padding: 1em;
+  padding: 0.5em;
   border: 1px solid #e5e7eb;
   border-radius: 4px;
   max-width: 20rem;
@@ -40,8 +40,9 @@
 }
 
 .form__error {
+  font-size: 1em;
   position: absolute;
-  bottom: -30%;
+  bottom: -35%;
   color: red;
 }
 

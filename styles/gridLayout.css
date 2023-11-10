@@ -24,7 +24,7 @@ body {
 
 .header {
   grid-area: header;
-  padding: 50px;
+  padding: 3em;
   background-color: lightgray;
 }
 
@@ -34,6 +34,6 @@ body {
 
 .footer {
   grid-area: footer;
-  padding: 50px;
+  padding: 3em;
   background-color: lightgray;
 }

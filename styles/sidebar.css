@@ -8,7 +8,7 @@
 
 .sidebar__icons {
   position: relative;
-  width: 50px;
+  width: max(50px, 1em);
 }
 
 .sidebar__plane {
@@ -31,8 +31,19 @@
 
 .sidebar__title {
   margin-left: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .sidebar__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sidebar__title {
+    margin-left: 0;
+  }
 }

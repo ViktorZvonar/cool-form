@@ -1,12 +1,12 @@
 .footer__button {
-  padding: 10px 40px;
+  padding: 1em 2em;
   width: 25%;
   border-radius: 10px;
   color: white;
   text-transform: capitalize;
   text-align: center;
   background-color: #596d48;
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 .footer__button:hover {
