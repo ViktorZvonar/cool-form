@@ -21,6 +21,11 @@
   border-radius: 4px;
 }
 
+.form__error {
+  color: red;
+  margin-top: 5px;
+}
+
 .form__input--error {
   border: 1px solid red;
 }
