@@ -3,12 +3,12 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 0.5em;
 }
 
 .sidebar__icons {
   position: relative;
-  width: max(50px, 1em);
+  width: max(60px, 1em);
 }
 
 .sidebar__plane {
@@ -31,7 +31,7 @@
 
 .sidebar__title {
   margin-left: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
