@@ -1,6 +1,5 @@
 const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
-const phoneNumber = document.getElementById("phone-number");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirm-password");
 const passwordError = document.getElementById("passwordError");
@@ -29,7 +28,7 @@ function validatePasswordComplexity(password) {
   return regex.test(password);
 }
 
-function validateForm(event) {
+export function validateForm(event) {
   let isValid = true;
 
   if (!checkPasswords()) {
@@ -56,12 +55,3 @@ function validateForm(event) {
 
   return isValid;
 }
-
-window.onload = function () {
-  const form = document.querySelector(".form");
-  if (form) {
-    form.onsubmit = validateForm;
-  } else {
-    console.log("Form not found.");
-  }
-};
