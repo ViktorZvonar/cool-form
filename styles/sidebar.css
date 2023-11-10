@@ -13,16 +13,20 @@
 
 .sidebar__plane {
   position: absolute;
-  top: -10px;
+  top: -11px;
   right: 0;
   width: 50%;
   fill: white;
+  stroke: black;
+  stroke-width: 2px;
   rotate: 90deg;
 }
 
 .sidebar__sphere {
-  fill: rgb(0, 115, 255);
+  fill: rgb(0, 166, 255);
   width: 100%;
+  stroke: black;
+  stroke-width: 0.5px;
 }
 
 .sidebar__title {
