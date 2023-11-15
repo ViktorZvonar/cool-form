@@ -25,7 +25,7 @@ body {
 .header {
   grid-area: header;
   padding: 3em;
-  background-color: lightgray;
+  background: lightgray;
 }
 
 .main {
